@@ -6,17 +6,11 @@
 
     <groupId>nikomitk</groupId>
     <artifactId>mavenlibtest</artifactId>
-    <version>2.2.1</version>
+    <version>2.2.2</version>
 
     <name>Test library</name>
     <description>A library to test deployment of this package</description>
     <url>https://github.com/NikomitK/mavenlibtest</url>
-
-    <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
     <build>
         <pluginManagement>

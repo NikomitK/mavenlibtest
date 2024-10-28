@@ -1,0 +1,20 @@
+name: JitPack Build
+
+on:
+  push:
+    branches:
+      - main   # Replace with your main branch name if different
+
+jobs:
+  jitpack_build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Trigger JitPack build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -X POST "https://jitpack.io/api/builds/github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"

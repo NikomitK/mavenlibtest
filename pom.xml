@@ -6,7 +6,11 @@
 
     <groupId>nikomitk</groupId>
     <artifactId>mavenlibtest</artifactId>
-    <version>2.2.0</version>
+    <version>2.2.1</version>
+
+    <name>Test library</name>
+    <description>A library to test deployment of this package</description>
+    <url>https://github.com/NikomitK/mavenlibtest</url>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
